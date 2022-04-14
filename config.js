@@ -1,5 +1,23 @@
+Skip to content
+Powerbomq
+/
+Rudhra
+Public
+forked from prince-rudh/Rudhra
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Rudhra/config.js
+@prince-rudh
+prince-rudh 📢 Rudhra Version 3.0 Available Now! …
+ 1 contributor
+89 lines (83 sloc)  6.48 KB
 /* Copyright (C) 2020 Yusuf Usta.
-
 WhatsAsena - Yusuf Usta
 */
 
@@ -19,7 +37,7 @@ module.exports = {
     VERSION: 'v8.0.0',
     CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.RUDHRA_SESSION === undefined ? '' : process.env.RUDHRA_SESSION,
-    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
+    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'true' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
 
@@ -30,16 +48,16 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
-    ALL: process.env.ALL_CAPTION === undefined ? 'ᴍᴀᴅᴇ ʙʏ ᴘʀɪɴᴄᴇʀᴜᴅʜ' : process.env.ALL_CAPTION,
+    ALL: process.env.ALL_CAPTION === undefined ? 'ᴍᴀᴅᴇ ʙʏ DJ MONSTER' : process.env.ALL_CAPTION,
     MENTION: process.env.TAG_REPLY === undefined ? '919895339960@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
-    DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
+    DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ?  false : process.env.DISABLE_JID_BGM_FILTER,
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
-    BOTNAME: process.env.BOT_NAME === undefined ? '  ☚⃟፝༄ƦUÐҤƦλ☚⃟፝࿐  \n\n   *ωнαтsαρρ вσт™*   \n' : process.env.BOT_NAME,
+    BOTNAME: process.env.BOT_NAME === undefined ? '  ☚⃟፝༄Kobus☚⃟፝࿐  \n\n   *ωнαтsαρρ вσт™*   \n' : process.env.BOT_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? '✮⃝🎸ƦUÐҤƦλ ÐØ₩₦ŁØÐł₦G ¥ØUƦ $Ø₦G✮⃝🎧' : process.env.SONGD,
@@ -60,16 +78,16 @@ module.exports = {
     TAGPLK: process.env.TAG_HEADER === undefined ? 'Note this' : process.env.TAG_HEADER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     YAK: process.env.YAK === undefined ? '919895339960,0' : process.env.YAK,
-    OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'PRINCE RUDH' : process.env.OWNER_SHIP,
+    OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'DJ MONSTER' : process.env.OWNER_SHIP,
     LOGO: process.env.LOGO_LINK === undefined ? 'https://i.imgur.com/v9nzy97.png' : process.env.LOGO_LINK,
-    BOTV2: process.env.BOTV2_NAME === undefined ? 'ƦUÐҤƦλ' : process.env.BOTV2_NAME,
+    BOTV2: process.env.BOTV2_NAME === undefined ? 'Kobus' : process.env.BOTV2_NAME,
     RUDHRA_AI: process.env.RUDHRA_AI === undefined ? 'false' : process.env.RUDHRA_AI,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
     LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/eabe3610fdfa87362a002.png' : process.env.LG_LOGO,
-    LOGO_NAME: process.env.LOGO_NAME === undefined ? '☚⃟፝༄ƦUÐҤƦλ☚⃟፝࿐' : process.env.LOGO_NAME,
+    LOGO_NAME: process.env.LOGO_NAME === undefined ? '☚⃟፝༄KOBUS☚⃟፝࿐' : process.env.LOGO_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
-    NU: process.env.NUMBER === undefined ? false : process.env.NUMBER,
+    NU: process.env.NUMBER === undefined ? 0658052694 : process.env.NUMBER,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -87,3 +105,16 @@ module.exports = {
     SUPPORT2: "919895809960-1617736751",
     SUPPORT3: "919895809960-1621015274"
 };
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
